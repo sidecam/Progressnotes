@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Progress Note Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            background-color: #e9ecef;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .question label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .question textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            min-height: 80px;
+            resize: vertical;
+        }
+        .submit-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            float: right;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Client Progress Note</h1>
+        <form id="progressNoteForm">
+            <!-- Personal Care/ADLs -->
+            <div class="section">
+                <h2>Personal Care/ADLs</h2>
+                <!-- ... questions in Personal Care/ADLs ... -->
+            </div>
+
+            <!-- Food and Fluid Intake -->
+            <div class="section">
+                <h2>Food and Fluid Intake</h2>
+                <!-- ... questions for Food and Fluid Intake ... -->
+            </div>
+
+            <!-- ... More sections ... -->
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('progressNoteForm').onsubmit = function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Here, you can add validation checks or other JavaScript functions
+
+            alert('Form submitted!'); // Placeholder action
+        };
+    </script>
+</body>
+</html>
